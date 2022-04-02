@@ -1,0 +1,50 @@
+/* My Laptop  */
+@media all and  (min-width:1522px) and (max-width:1800px){
+   .menu{
+       display: flex;
+       flex-direction: row;
+   }
+   .body{
+       height: 520px;
+   }
+   .navbarOptions{
+       display: flex;
+       width: 100%;
+   }
+   .h1head{
+       font-size: 12vh;
+       line-height: 77px;
+   }
+   .menuitems{
+       width: 20%;
+   }
+   .search{
+    width: 20%;
+   }
+}
+
+/* Mobile  */
+@media all and (max-width:518px) and (min-width:350px){
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .body{
+        height:130vh;
+    }
+    .navbarOptions{
+        display: none;
+    }
+    .h1head{
+        font-size: 7vh;
+        line-height: 60px;
+    }
+    .menuitems{
+        width: 75%;
+        margin-bottom: 15px;
+    }
+    .search{
+        width: 75%;
+    }
+    
+}

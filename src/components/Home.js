@@ -1,8 +1,9 @@
 import React from "react";
+import "./Responsive.css"
 
 function Home() {
   const body = {
-    height: "520px",
+    // height: "520px",
     backgroundImage:
       "url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1400&q=80')",
     backgroundSize: "cover",
@@ -11,7 +12,8 @@ function Home() {
     display: "flex",
     color: "white",
     flexDirection:"column",
-    alignItems:"center"
+    alignItems:"center",
+    width:"100%"
   };
   const navbar = {
     display: "flex",
@@ -21,7 +23,7 @@ function Home() {
     margin: "2px 10px 0px 10px",
   };
   const navbarOptions = {
-    display: "flex",
+    // display: "flex",
     width: "100%",
     marginLeft: "63%",
     marginRight: "50px",
@@ -43,7 +45,7 @@ function Home() {
     padding:"15px",
     alignItems:"center",
     justifyContent:"space-between",
-    backgroundColor:"transparent",
+    backgroundColor:"rgb(255 255 255 / 55%)",
     borderRadius:"20px",
     width:"65%"
   }
@@ -53,16 +55,16 @@ function Home() {
     padding:"12px",
     borderRadius:"10px",
     backgroundColor:"white",
-    width:"20%",
+    // width:"20%",
     cursor:"pointer"
   }
   return (
-    <div style={body}>
+    <div style={body} className="body">
       <div style={navbar}>
         <div style={{ fontSize: "11px",marginLeft:"10px" }}>
           <h1>your logo</h1>
         </div>
-        <div style={navbarOptions}>
+        <div style={navbarOptions} className="navbarOptions">
           <p>Explore</p>
           <p>About Us</p>
           <p>City </p>
@@ -85,24 +87,24 @@ function Home() {
 
       {/* 2nd block */}
       <div style={head}>
-            <h1 style={{fontSize: "12vh",width:"60%",textAlign:"center",lineHeight:"77px",marginBottom:"0px"}}>Rethink your living and renting</h1>
+            <h1 className="h1head" style={{width:"60%",textAlign:"center",marginBottom:"0px"}}>Rethink your living and renting</h1>
             <h3 style={{fontSize:"25px"}}>Make your stay painless with Us</h3>
       </div>
       {/* 3rd block  */}
-      <div style={menu}>
-        <div style={menuitems}>
+      <div style={menu} className="menu">
+        <div style={menuitems} className="menuitems">
             <p style={{color:"grey",margin:"0px"}}>City</p>   
             <h4 style={{color:"black",margin:"0"}}>Select your city</h4>   
         </div>
-        <div style={menuitems}>
+        <div style={menuitems} className="menuitems">
         <p style={{color:"grey",margin:"0px"}}>Dates</p>   
             <h4 style={{color:"black",margin:"0"}}>Select your Dates</h4>
         </div>
-        <div style={menuitems}>
+        <div style={menuitems} className="menuitems">
         <p style={{color:"grey",margin:"0px"}}>Guests</p>   
             <h4 style={{color:"black",margin:"0"}}>Add your Guests</h4>
         </div>
-        <div
+        <div className="search"
             style={{
               // border: "2px solid white",
               display: "flex",
@@ -113,7 +115,7 @@ function Home() {
               height: "65px",
               // width: "83px",
           backgroundColor:"#ffb264e6",
-          width:"20%",
+          // width:"20%",
           fontWeight:"bold"
             }}
           >
